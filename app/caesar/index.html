@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cypher</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="cypher-card">
+            <header>
+                <h1 class="card-title">Caesar Cypher</h1>
+                <p class="card-subtitle">Vanilla JS</p>
+            </header>
+
+            <main class="card-body">
+                <div class="input-group">
+                    <label for="cypherKey">Cypher key</label>
+                    <input 
+                        data-cy="cypher-key"
+                        type="number" 
+                        id="cypherKey" 
+                        min="1"
+                        max="25"
+                        value="6" 
+                        class="key-input"
+                        required
+                    >
+                </div>
+
+                <div class="textarea-group">
+                    <label for="plainText">Message</label>
+                    <textarea id="plainText" rows="6" class="message-input" data-cy="message-input" >Hello World!</textarea>
+                </div>
+
+                <button type="button" data-cy="button-cypher" class="cypher-button">Cypher</button>
+            </main>
+
+            <footer class="card-footer">
+                <p class="result-text" data-cy="cypher-result">Nkrru Cuxrj!</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

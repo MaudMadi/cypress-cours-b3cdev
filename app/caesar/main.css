@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    background-color: #000000;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    padding: 20px;
+}
+
+.cypher-card {
+    background-color: #fcfcfc; 
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); 
+    width: 320px;
+    max-width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+header {
+    text-align: left;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 800; 
+    color: #1a1a1a;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 4px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group,
+.textarea-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+    color: #333333;
+}
+
+.key-input,
+.message-input {
+    background-color: #e6e6e6; 
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.key-input::-webkit-inner-spin-button, 
+.key-input::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.key-input {
+    -moz-appearance: textfield;
+    width: 60px;
+}
+
+
+.message-input {
+    resize: none; 
+    font-family: inherit; 
+}
+
+
+.cypher-button {
+    background-color: #2d5de8; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+.cypher-button:hover {
+    background-color: #1c4bc1;
+}
+
+
+.card-footer {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.result-text {
+    font-size: 14px;
+    color: #068132; 
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
